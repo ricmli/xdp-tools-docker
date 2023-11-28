@@ -6,7 +6,6 @@ Build:
 
 ```bash
 docker build -t xdp-tools:latest .
-# docker build -t xdp-tools:latest --build-arg HTTP_PROXY=$http_proxy --build-arg HTTPS_PROXY=$https_proxy .
 ```
 
 Run:
