@@ -15,3 +15,12 @@ docker run --rm -it --net=host --privileged -v /sys/fs/bpf:/sys/fs/bpf xdp-tools
 
 xdp-loader status
 ```
+
+Pull the image from Github and run:
+
+```bash
+# docker pull ghcr.io/ricmli/xdp-tools-docker:main
+docker run --rm -it --net=host --privileged -v /sys/fs/bpf:/sys/fs/bpf ghcr.io/ricmli/xdp-tools-docker:main bash
+# xdp-loader status
+# xdpdump -i ens785f0 --load-xdp-program
+```
