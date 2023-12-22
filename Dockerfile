@@ -17,7 +17,9 @@ RUN git clone --recurse-submodules https://github.com/xdp-project/xdp-tools.git 
     DESTDIR=/install make install
 
 # Stage 2: Setup minimal production image
-FROM ubuntu:22.04
+FROM ubuntu:22.04 AS final
+
+LABEL maintainer="ricmli@outlook.com"
 
 # Install runtime dependencies
 RUN apt-get update && \
