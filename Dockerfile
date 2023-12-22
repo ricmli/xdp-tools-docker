@@ -21,7 +21,7 @@ FROM ubuntu:22.04
 
 # Install runtime dependencies
 RUN apt-get update && \
-    apt-get install -y libelf-dev libpcap-dev libcap-ng-dev && \
+    apt-get install -y libelf1 libpcap0.8 libcap-ng0 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
